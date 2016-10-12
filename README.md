@@ -2,13 +2,13 @@
 
 [View the live demo](http://zacharybedrosian.com/LEARNING/V8/index.html)
 
-Parent Pilot Dashboard is a single page dashboard that summarizes a LA's member yearly reading statistics and reading averages.
+Parent Pilot Dashboard is a single page dashboard that summarizes a Learning Ally member's yearly reading statistics and reading averages.
 
 ---
 
-React Tags
+ReactJS Tags
 ------------
-Listed below are all of the tags in the index.html and what data point they correspond with.
+Listed below are all of the tags in the index.html and what data point or calculation they correspond with.
 
 ~~~ html
 <!-- Learning Ally Member Frist Name -->
@@ -22,11 +22,12 @@ Listed below are all of the tags in the index.html and what data point they corr
 
 <!-- 
 Learning Ally Member Average Hours Read 
-Take the Total Hours Read and divide by
-Total Days Read. 
 
-Round down to the neartest whole number
-so we can say "over" X hours a day.
+Take the Total Hours Read and divide by
+Total Days Read...
+
+round down to the nearest whole number
+so we can say "over" × hours a day.
 -->
 <span class=“hours-avg-eq”>5</span>
 
