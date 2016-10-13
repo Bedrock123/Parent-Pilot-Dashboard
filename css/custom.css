@@ -54,8 +54,8 @@ body {
 
 .grid-text-content2 {
     font-weight: 500;
-    font-size: 30px;
-    padding: 70px 50px 100px 40px;
+    font-size: 27px;
+    padding: 100px 50px 100px 40px;
     color: white;
 }
 
@@ -79,7 +79,7 @@ body {
     .grid-text-content5 {
         font-weight: 500;
         font-size: 15px;
-        padding: 60px 40px 60px 30px;
+        padding: 50px 40px 50px 30px;
         color: white;
     }
     .words-break {
@@ -91,7 +91,7 @@ body {
     .grid-text-content5 {
         font-weight: 500;
         font-size: 20px;
-        padding: 60px 40px 60px 30px;
+        padding: 60px 40px 40px 30px;
         color: white;
     }
     .words-break {

@@ -26,8 +26,9 @@ module.exports = function(grunt) {
             uglify: {
                 my_target: {
                     files: {
-                        'build/js/scripts.min.js': ['build/js/scripts.js'],
-                        'build/js/modernizr.custom.min.js': ['js/modernizr.custom.js']
+                        'build/js/vender-scripts.min.js': ['build/js/scripts.js'],
+                        'build/js/modernizr.custom.min.js': ['js/modernizr.custom.js'],
+                        'build/js/custom.min.js': ['js/custom.js'],
                     }
                 }
             },
@@ -39,6 +40,21 @@ module.exports = function(grunt) {
                 css: {
                     files: ['css/**/*.css'],
                     tasks: ['concat', 'cssmin'],
+                },
+                html: {
+                    files: ['index.html'],
+                    tasks: ['htmlmin'],
+                },
+            },
+            htmlmin: { // Task
+                dist: { // Target
+                    options: { // Target options
+                        removeComments: true,
+                        collapseWhitespace: true
+                    },
+                    files: { // Dictionary of files
+                        'index.min.html': 'index.html', // 'destination': 'source'
+                    }
                 },
             },
             cssmin: {
@@ -53,7 +69,10 @@ module.exports = function(grunt) {
         grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.registerTask('default', ['concat', 'cssmin', 'uglify', 'watch']);
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.registerTask('default', ['htmlmin', 'concat', 'cssmin', 'uglify', 'watch']);
+    grunt.loadNpmTasks('grunt-autoprefixer');
+
 
 };

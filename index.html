@@ -140,7 +140,7 @@
                     <!-- Clarlos Listedn To Over 213 Hours Grid -->
                     <div class="grid-item col-xs-12 col-sm-12 col-md-3" style="background-color: #a69be0;;">
                         <div class="grid-item-content grid-text-content3 ">
-                            When Carlos reads with Learning Ally, they average over <span class="grid-text-content-bold">5</span> hours of reading each day.
+                            When Carlos reads with Learning Ally, they average over <span class="grid-text-content-bold">1.2</span> hours of reading each day.
                         </div>
                     </div>
                     <!-- Total Pages Read -->
@@ -231,82 +231,12 @@
 
         <!-- Vender Scripts
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <script src="build/js/scripts.min.js"></script>
+        <script src="build/js/vender-scripts.min.js"></script>
 
-
-        <!-- My Custom Scripts & Initzializers
+        <!-- Custom Scripts
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <!-- Masrony Init/Config 
-        Reinilizes the Masontry Grid 3 & 5 seconds to ensure images are included into grid properly -->
-        <script type="text/javascript">
-            $('.grid').masonry({
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-sizer',
-                percentPosition: true
-            });
-            window.setTimeout(function() {
-                $('.grid').masonry({
-                    itemSelector: '.grid-item',
-                    columnWidth: '.grid-sizer',
-                    percentPosition: true
+        <script src="build/js/custom.min.js"></script>
 
-                });
-            }, 3000);
-            window.setTimeout(function() {
-                $('.grid').masonry({
-                    itemSelector: '.grid-item',
-                    columnWidth: '.grid-sizer',
-                    percentPosition: true
-
-                });
-            }, 5000);
-        </script>
-        <!-- Scroll Progress Init/Config -->
-        <script type="text/javascript">
-            scrollProgress.set({
-                color: '#1ab7ea',
-                height: '12px',
-                bottom: false
-            });
-        </script>
-        <!-- Makes Confetti Dissapear 12 seconds after load  -->
-        <script type="text/javascript">
-            window.setTimeout(function() {
-                $('#confetti').fadeOut("slow");
-            }, 12000);
-
-            if ($(window).width() < 800) {
-                $('#confetti').fadeOut("slow");
-            }
-        </script>
-        <script>
-            $(function() {
-                $("#typedJS").typed({
-                    strings: [
-                        "^500 to over <span class='grid-text-content-bold'>110</span> full length Harry Potter And The Sorceors Stone books!",
-                        "^500 to over <span class='grid-text-content-bold'>2,410</span> Nacey Drew commic books!",
-                        "^500 to over <span class='grid-text-content-bold'>50</span> readings of the Dictionary",
-                        "^500 to over <span class='grid-text-content-bold'>1,010</span> readings of Moby Dick"
-                    ],
-                    typeSpeed: 0,
-                    startDelay: 500,
-                    backDelay: 4000,
-                    loop: true,
-                    shuffle: true,
-                });
-
-                $("#ctaTypedJS").typed({
-                    strings: [
-                        "^500 the gift of reading.",
-
-                    ],
-                    typeSpeed: 0,
-                    startDelay: 500,
-                    backDelay: 4000,
-                    loop: true,
-                });
-            });
-        </script>
 </body>
 
 </html>
