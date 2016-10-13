@@ -1,0 +1,30 @@
+{
+  "name": "learning-ally-pilot-dash",
+  "version": "1.0.0",
+  "description": "[View the live demo](http://zacharybedrosian.com/LEARNING/V8/index.html)",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bedrock123/Parent-Pilot-Dashboard.git"
+  },
+  "author": "Zachary Bedrosian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bedrock123/Parent-Pilot-Dashboard/issues"
+  },
+  "homepage": "https://github.com/Bedrock123/Parent-Pilot-Dashboard#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-uncss": "^0.6.1"
+  }
+}
